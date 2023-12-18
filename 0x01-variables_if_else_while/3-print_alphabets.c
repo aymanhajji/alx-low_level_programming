@@ -13,6 +13,9 @@ int main(void)
 	for (i = 0 ; i <= 25 ; i++)
 	{
 		putchar(alphabetMin[i]);
+	}
+	for (i = 0 ; i <= 25 ; i++)
+	{
 		putchar(alphabetMax[i]);
 	}
 	putchar('\n');
