@@ -6,17 +6,12 @@
  */
 int main(void)
 {
-	char alphabetMin[] = "abcdefghijklmnopqrstuvwxyz";
-	char alphabetMax[] = "ABCDEFGHIJKLMNOPQESTUVWXYZ";
+	char alphabetMin[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	int i;
 
-	for (i = 0 ; i <= 25 ; i++)
+	for (i = 0 ; i <= 50 ; i++)
 	{
 		putchar(alphabetMin[i]);
-	}
-	for (i = 0 ; i <= 25 ; i++)
-	{
-		putchar(alphabetMax[i]);
 	}
 	putchar('\n');
 	return (0);
