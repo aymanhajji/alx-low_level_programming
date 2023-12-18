@@ -9,7 +9,7 @@ int main(void)
 	char alphabetMin[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	int i;
 
-	for (i = 0 ; i <= 50 ; i++)
+	for (i = 0 ; i <= 51 ; i++)
 	{
 		putchar(alphabetMin[i]);
 	}
