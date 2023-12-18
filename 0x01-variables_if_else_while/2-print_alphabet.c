@@ -10,7 +10,8 @@ int main(void)
 	int i;
 	for (i = 0; i <= 25 ; i++)
 	{
-		putchar("%s \n",alphabet[i]);
+		putchar(alphabet[i]);
+		putchar('\n');
 	}
 	return (0);
 }
