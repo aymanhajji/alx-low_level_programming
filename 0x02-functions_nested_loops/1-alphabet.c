@@ -1,13 +1,11 @@
 #include <stdio.h>
 #include <unistd.h>
-#include "main.h"
+#include "1-main.c"
 /**
  * main - returns alphabet in lower case
  *
  * Return: Always 0
  */
-void print_alphabet(void);
-
 void print_alphabet(void)
 {
     char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
