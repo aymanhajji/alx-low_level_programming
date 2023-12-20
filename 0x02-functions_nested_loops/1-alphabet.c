@@ -1,9 +1,8 @@
 #include <stdio.h>
-#include "main.h"
 #include <unistd.h>
 #include "1-main.c"
 /**
- * main - returns alphabet in lower case
+ * returns alphabet in lower case
  *
  * Return: Always 0
  */
