@@ -1,6 +1,7 @@
+#include "main.h"
 #include <stdio.h>
 #include <unistd.h>
-#include "1-main.c"
+
 /**
  * returns alphabet in lower case
  *
@@ -15,5 +16,5 @@ void print_alphabet(void)
     {
         putchar(alphabet[i]);
     }
-    putchar('\n');
+    putchar('\n'); 
 }
