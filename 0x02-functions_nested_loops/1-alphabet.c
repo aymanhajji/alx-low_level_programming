@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <unistd.h>
-#include "1-main.c"
+#include "main.h"
+
+void print_alphabet(void);
 /**
  * main - returns alphabet in lower case
  *
