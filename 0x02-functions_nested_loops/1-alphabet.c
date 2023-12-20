@@ -3,11 +3,11 @@
 #include <unistd.h>
 
 /**
- * returns alphabet in lower case
+ * main - returns alphabet in lower case
  *
  * Return: Always 0
  */
-void print_alphabet(void)
+void print_alphabet(void)                 /* prints alphabet */
 {
     char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
     int i;
