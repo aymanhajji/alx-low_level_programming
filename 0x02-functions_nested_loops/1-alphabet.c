@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 #include <unistd.h>
 #include "1-main.c"
 /**
@@ -6,6 +7,11 @@
  *
  * Return: Always 0
  */
+int main(void)
+{
+	print_alphabet(void);
+	return (0);
+}
 void print_alphabet(void)
 {
     char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
@@ -16,10 +22,4 @@ void print_alphabet(void)
         putchar(alphabet[i]);
     }
     putchar('\n');
-}
-
-int main(void)
-{
-	print_alphabet(void);
-	return (0);
 }
