@@ -9,13 +9,9 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int i = 0;
-	int k;
-	int j = 0;
-
 	while (*dest != '\0')
 	{
-		i++;
+		dest++;
 	}
 	while (*src != '\0')
 	{
