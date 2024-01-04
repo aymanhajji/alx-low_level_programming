@@ -10,10 +10,26 @@
 void print_array(int *a, int n)
 {
 	int i;
+	int num;
 
 	for (i = 0 ; i < n ; i++)
 	{
-		_putchar('0' + a[i]);
+		num = a[i];
+		if (num < 0)
+		{
+			_putchar('-');
+			num = -num;
+		}
+		if (num == 0)
+		{
+			_putchar('0');
+			return;
+		}
+		if (num / 10)
+		{
+			print_long_int(num / 10);
+		}
+		_putchar((num % 10) + '0');
 		if (n - i != 1)
 		{
 			_putchar(',');
