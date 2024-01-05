@@ -36,11 +36,11 @@ int _strcmp(char *s1, char *s2)
 	}
 	else if (i < j)
 	{
-		return (-1);
+		return (1);
 	}
 	else
 	{
-		return (1);
+		return (-1);
 	}
 	return (valeur);
 }
