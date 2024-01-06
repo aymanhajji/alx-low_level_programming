@@ -8,10 +8,16 @@
  */
 char *string_toupper(char *src)
 {
-	while (*src != '\0')
+	char *ptr = src;
+	int i = 0;
+
+	while (src[i] != '\0')
 	{
-		src++;
+		if (src[i] <= 'z' && src[i] >= 'a')
+		{
+			src[i] = src[i] + 32
+		}
 	}
 
-	return (pointer);
+	return (ptr);
 }
