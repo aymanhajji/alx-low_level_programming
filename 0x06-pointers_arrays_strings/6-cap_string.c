@@ -23,5 +23,5 @@ char *cap_string(char *src)
 			src[i] = src[i] - 32;
 		}
 	}
-	return (ptr);
+	return (*ptr);
 }
