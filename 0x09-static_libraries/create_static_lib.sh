@@ -1,6 +1,7 @@
 #!/bin/bash
-for file in $0x09-static_libraries; do
+c_files=$(ls *.c 2>/dev/null)
+for file in $c_files; do
 	object_file = "${file%.c}.o"
-	gcc -c "$file" -o "$object_file"
+	gcc -c "$file" -o "object_file"
 done
 ar rcs liball.a *.o
