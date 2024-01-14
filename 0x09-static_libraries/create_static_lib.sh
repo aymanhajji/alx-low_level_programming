@@ -1,7 +1,6 @@
 #!/bin/bash
-c_files=$(ls *.c 2>/dev/null)
-for file in $c_files; do
-	object_file = "${file%.c}.o"
-	gcc -c "$file" -o "object_file"
+ar -rc liball.a
+for file in *.c; do
+	gcc -c "$file" -o "${file%.c}.o"
+	ar -rcs liball.a "${file%.c}.o"
 done
-ar rcs libmy.a *.o
