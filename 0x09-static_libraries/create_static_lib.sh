@@ -4,4 +4,4 @@ for file in $c_files; do
 	object_file = "${file%.c}.o"
 	gcc -c "$file" -o "object_file"
 done
-ar rcs liball.a *.o
+ar rcs libmy.a *.o
