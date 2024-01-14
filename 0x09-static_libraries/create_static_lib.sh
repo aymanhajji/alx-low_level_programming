@@ -1,0 +1,6 @@
+#!/bin/bash
+for file in $c_file; do
+	object_file = "${file%.c}.o"
+	gcc -c "$file" -o "$object_file"
+done
+ar rcs liball.a *.o
