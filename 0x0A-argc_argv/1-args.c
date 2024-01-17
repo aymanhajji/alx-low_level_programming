@@ -9,12 +9,12 @@
  */
 int main(int argc, char *argv[])
 {
-	(void)argc;
 	int i;
 	int tempArgCount;
 	int digit;
 
 	i = 0;
+	(void)argc;
 
 	while (argv[i] != 0)
 	{
