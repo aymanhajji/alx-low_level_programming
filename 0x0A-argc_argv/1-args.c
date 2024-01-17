@@ -9,10 +9,26 @@
  */
 int main(int argc, char *argv[])
 {
-	_putchar('0' + argc);
-	_putchar('\n');
+	int i;
+	int tempArgCount;
+	int digit;
 
-	(void)*argv;
+	i = 0;
+
+	while (argv[i] != 0)
+	{
+		i++;
+	}
+
+	tempArgCount = argCount;
+
+	while (tempArgCount > 0)
+	{
+		digit = tempArgCount % 10;
+		_putchar('0' + digit);
+		tempArgCount /= 10;
+	}
+	_putchar('\n');
 
 	return (0);
 }
