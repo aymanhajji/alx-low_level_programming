@@ -21,7 +21,12 @@ int main(int argc, char *argv[])
 		i++;
 	}
 
-	tempArgCount = i;
+	tempArgCount = i - 1;
+
+	if (i > 0)
+	{
+		i--;
+	}
 
 	while (tempArgCount > 0)
 	{
