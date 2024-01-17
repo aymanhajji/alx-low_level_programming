@@ -28,6 +28,11 @@ int main(int argc, char *argv[])
 		i--;
 	}
 
+	if (tempArgCount == 0)
+	{
+		_putchar('0' + tempArgCount);
+	}
+
 	while (tempArgCount > 0)
 	{
 		digit = tempArgCount % 10;
