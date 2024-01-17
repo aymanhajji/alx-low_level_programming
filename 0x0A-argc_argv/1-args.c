@@ -9,6 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
+	(void)argc;
 	int i;
 	int tempArgCount;
 	int digit;
@@ -20,7 +21,7 @@ int main(int argc, char *argv[])
 		i++;
 	}
 
-	tempArgCount = argCount;
+	tempArgCount = i;
 
 	while (tempArgCount > 0)
 	{
