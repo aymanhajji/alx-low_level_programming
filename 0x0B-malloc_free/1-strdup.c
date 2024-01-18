@@ -39,3 +39,4 @@ char *_strdup(char *str)
 	dup[length] = '\0';
 
 	return (dup);
+}	
