@@ -4,7 +4,7 @@
 /**
  * main - Entry point
  *
- * Return: Always 0 (Success)
+ * Return: text
 */
 void positive_or_negative(int i)
 {

@@ -27,7 +27,7 @@ void print_array(int *a, int n)
 		}
 		if (num / 10)
 		{
-			print_long_int(num / 10);
+			_putchar('0' + num / 10);
 		}
 		_putchar((num % 10) + '0');
 		if (n - i != 1)
