@@ -7,21 +7,14 @@
  */
 size_t print_listint(const listint_t *h)
 {
-	int count;
-	struct listint_t *link;
+	size_t count;
 
-	count = 1;
-	link = h;
-	if (h == NULL)
-	{
-		printf("Error\n");
-		return (count);
-	}
-	while (next != NULL)
+	count = 0;
+	while (h != NULL)
 	{
 		count++;
-		printf("%d\n", link->n);
-		link = link->next;
+		printf("%d\n", h->n);
+		h = h->next;
 	}
 	return (count);
 }
