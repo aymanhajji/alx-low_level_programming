@@ -19,5 +19,4 @@ void print_binary(unsigned long int n)
 	{
 		_putchar((n & (1UL << shift)) ? '1' : '0');
 	}
-	_putchar('\n');
 }
