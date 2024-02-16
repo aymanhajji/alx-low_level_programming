@@ -9,46 +9,33 @@
 int create_file(const char *filename, char *text_content)
 {
 	int fd, bytes_written;
+	mode_t mode;
 	int len;
-	char *buffer;
 
 	len = 0;
-	if (text_content == NULL)
-	{
-		fd = open(filename, O_RDONLY);
-		return (1);
-	}
-	while (text_content[len] != '\0')
-	{
-		len++;
-	}
-	fd = open(filename, O_WRONLY | O_CREAT | O_TRUNC, 0600);
-	buffer = malloc(sizeof(char *) * (len + 1));
-	if (buffer == NULL)
-	{
-		close(fd);
-		return (-1);
-	}
-	if (fd == -1)
-	{
-		free(buffer);
-		close(fd);
-		return (-1);
-	}
+	mode = S_IRUSR | S_IWUSR;
 	if (filename == NULL)
 	{
-		free(buffer);
-		close(fd);
 		return (-1);
 	}
-	bytes_written = write(fd, buffer, len);
-	if (bytes_written == -1 || bytes_written != len)
+	fd = open(filename, O_WRONLY | O_CREAT | O_TRUNC, mode);
+	if (fd == -1)
 	{
-		free(buffer);
-		close(fd);
 		return (-1);
 	}
-	free(buffer);
+	if (text_content != NULL)
+	{
+		while (text_content[len] != '\0')
+		{
+			len++;
+		}
+		bytes_written = write(fd, text_content, len + 1);
+		if (bytes_written == -1)
+		{
+			close(fd);
+			return (-1);
+		}
+	}
 	close(fd);
 	return (1);
 }
